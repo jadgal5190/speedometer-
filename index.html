@@ -24,7 +24,7 @@ body {
     <script>
     $(function() {
   navigator.geolocation.watchPosition(function(e){
-   $("#speed").text(Math.round((e.coords.speed * 3.6) * 1.15));
+   $("#speed").text(Math.round((e.coords.speed * 3.6) * 1.25));
   }, function(e) {}, { enableHighAccuracy: true, maximumAge: 5000 });
 });
   </script>
